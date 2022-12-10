@@ -1,0 +1,32 @@
+.Header {
+  height: 80px;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Input {
+  width: 389px;
+  height: 40px;
+  margin-left: 30px;
+  font-size: 18px;
+  padding: 0 20px;
+
+
+  /* Gray */
+
+  border-color: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.Left {
+  display: flex;
+  align-items: center;
+}
+
+.Right {
+  font-size: x-large;
+  font-weight: bold;
+}
