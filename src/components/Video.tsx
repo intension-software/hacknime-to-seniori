@@ -1,15 +1,15 @@
 import { FC, useState } from 'react'
 import './Video.css';
 
-interface VideoProps {
-  position: any;
-  maxWidth?: string;
-  maxHeight?: string;
-  width?: string;
-  height?: string;
-  top?: any;
-  left?: any;
-}
+// interface VideoProps {
+//   position: any;
+//   maxWidth?: string;
+//   maxHeight?: string;
+//   width?: string;
+//   height?: string;
+//   top?: any;
+//   left?: any;
+// }
 
 
 const Video: FC = () => {
