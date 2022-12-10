@@ -10,7 +10,9 @@ const Account: FC = () => {
           <img className='img' src="./images/profile.png" />
           <div className='AccTitle'>Jozef Švagerko    <img width="45px" height="45px"src="./images/star.png" />4.1</div>
         </div>
-        <button className='Button2'>Kontaktovať</button>
+        <form action="mailto:webmaster@example.com">
+          <button className='Button2' >Kontaktovať</button>
+        </form>
       </div>
       <div className='AccBody'>
         <div>

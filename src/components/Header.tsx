@@ -11,7 +11,7 @@ const Header: FC = () => {
   return (
     <div className="Header">
       <div className='Left'>
-        <img width="180" height="50" src='./images/logo.png'/>
+        <img onClick={() => navigate('/')} width="180" height="50" src='./images/logo.png'/>
         <input placeholder="Vyhľadávanie..." className='Input'/>
       </div>
       {user ? 
