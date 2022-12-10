@@ -4,7 +4,7 @@ import Video from './Video';
 
 const Tutorials: FC = () => {
   return (
-    <section>
+    <section style={{paddingInline:"2rem"}}>
       <div className="Tutorials">
         <div className='Title'>Návody</div>
         <div className='Badges'>
