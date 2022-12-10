@@ -10,7 +10,6 @@ const Home: FC = () => {
 
   return (
     <div className="Home">
-      <Header />
       {user ? <Forum /> : null}
       <Tips />
       <Tutorials />
