@@ -31,31 +31,66 @@ body {
 }
 
 #videodetail video {
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 #videodetail #video {
   position: relative;
 }
 
-#videodetail .controls {
+#videodetail .overlay {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(0, 255, 85, 0.5), rgba(0, 0, 0, 0));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: end;
 }
 
-#videodetail #playpause {
-  width: 100px;
-  height: 100px;
-  background: url(../assets/playpause.png) no-repeat;
-  background-size: 100%;
+#videodetail #progress {
+  height: .2rem;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#videodetail #progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #FFD166;
+}
+
+#videodetail .controls {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+#videodetail #full {
+  margin-left: auto;
+}
+
+#videodetail button {
+  all: unset;
+  height: 1.5rem;
+}
+
+#videodetail button:hover {
   cursor: pointer;
+}
+
+#videodetail button img {
+  height: 100%;
+}
+
+#videodetail button img:active {
+  filter: invert(100%) invert(73%) sepia(81%) saturate(329%) hue-rotate(344deg) brightness(104%) contrast(101%);
+}
+
+.m0 {
+  margin: 0 !important;
 }
