@@ -11,13 +11,13 @@ const Header: FC = () => {
   return (
     <div className="Header">
       <div className='Left'>
-        <img width="180" height="50" src='./images/logo.png'/>
+        <img onClick={() => navigate('/')} width="180" height="50" src='./images/logo.png'/>
         <input placeholder="Vyhľadávanie..." className='Input'/>
       </div>
       {user ? 
         <div style={{display: "flex", alignItems: "center", gap: "2rem", fontWeight: "bold"}}>
           <div>Digiškolitelia</div>
-          <div>Užívateľ: {user.email}</div>
+          <div onClick={() => navigate('/account')}>Užívateľ: {user.email}</div>
         </div> : 
         <div onClick={() => navigate('/login')} className='Right'>Prihlasenie / Registrácia</div>}
     </div>

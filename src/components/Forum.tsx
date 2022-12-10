@@ -1,7 +1,9 @@
 import { FC } from 'react'
 import './Forum.css';
+import { useNavigate } from 'react-router-dom'
 
 const Forum: FC = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="Forum1">
@@ -12,7 +14,7 @@ const Forum: FC = () => {
         <div>
           <div className='ForumSubTitle'>Ako môžem vymazať staré fotky?</div>
         </div>
-        <button className='Button2'>Zobraziť 4 nové</button>
+        <button className='Button2' onClick={() => navigate('/forum')}>Zobraziť 4 nové</button>
       </div>
     </>
   );

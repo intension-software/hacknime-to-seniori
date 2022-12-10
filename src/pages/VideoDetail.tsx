@@ -83,8 +83,8 @@ const VideoDetail: FC = () => {
         </div>
       </div>
       <div id="video">
-        <video controls ref={video} src="./videos/video.mp4"></video>
-        <div className="overlay" style={{ display: 'none' }}>
+        <video muted={false} ref={video} src="./videos/video.mp4"></video>
+        <div className="overlay">
           <div id="progress" onClick={progress}>
             <div id="progress-bar" ref={progressBar}></div>
           </div>

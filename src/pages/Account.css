@@ -1,0 +1,47 @@
+.AccHeader {
+  margin-top: 2rem;
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  max-height: 200px;
+  display: flex;
+  justify-content: space-between;
+  background: #FFD166;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.AccTitle {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 250px;
+}
+
+.AccTitle2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+.img {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+
+.AccBadge {
+  background: #EF476F;
+  border-radius: 10px;
+  padding-inline: 0.5rem;
+  width: 60px;
+  height: 30px;
+  margin-block: 1rem;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.AccBody {
+  display: flex;
+  justify-content: left;
+  margin-top: 2rem;
+  gap: 2rem;
+}
