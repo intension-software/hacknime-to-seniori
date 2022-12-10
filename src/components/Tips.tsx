@@ -3,7 +3,7 @@ import './Tips.css';
 
 const Tips: FC = () => {
   return (
-    <>
+    <div style={{paddingInline:"2rem"}}>
       <div className="Tips1">
         <div className='Title1'>Tipy</div>
         <div className='Button1'>Zobraziť všetky</div>
@@ -15,7 +15,7 @@ const Tips: FC = () => {
         </div>
         <button className='Button2'>Chcem to skúsiť</button>
       </div>
-    </>
+    </div>
   );
 }
 
