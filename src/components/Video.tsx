@@ -1,5 +1,6 @@
 import { FC, useState } from 'react'
 import './Video.css';
+import { useNavigate } from 'react-router-dom'
 
 // interface VideoProps {
 //   position: any;
@@ -13,6 +14,7 @@ import './Video.css';
 
 
 const Video: FC = () => {
+  const navigate = useNavigate();
 
   // const [fullscreen, setFullscreen] = useState<VideoProps>({
   //   position: "absolute",
@@ -40,9 +42,12 @@ const Video: FC = () => {
 
   return (
     <div className="Video">
-      <div /*style={fullscreen}*/>
-          <video style={{width: "100%", height: "100%"}} controls  src="./videos/video.mp4"></video>
-          {/* <button style={{position: "absolute",bottom: "42px", right: "32px"}} onClick={handleFullscreen}>[ ]</button> */}
+      <img style={{cursor: "pointer", width: "240px", height: "140px", borderRadius: "10px"}} onClick={() => navigate('/video')} src="./images/thumbnail.png" alt="thumbnail" />
+      <div>
+        <div style={{color: "rgba(0, 0, 0, 0.5);", fontSize: "small"}}>Video</div>
+        <div className='SubTitle'>Ako odoslať platbu?<img width="20px" height="20px" src="./images/ystar.png"/>4.1</div>
+        <div style={{color: "rgba(0, 0, 0, 0.5);", fontSize: "small"}}>Digiškolitelia</div>
+        
       </div>
     </div>
   );

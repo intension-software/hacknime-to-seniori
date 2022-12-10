@@ -3,6 +3,12 @@ import './Tutorials.css';
 import Video from './Video';
 
 const Tutorials: FC = () => {
+  const videos = []
+  for (let i = 0; i < 54; i++) {
+    videos.push(<Video />)
+  }
+
+
   return (
     <section style={{paddingInline:"2rem"}}>
       <div className="Tutorials">
@@ -17,8 +23,7 @@ const Tutorials: FC = () => {
           <div className='Badge'>Hry</div>
         </div>
         <div style={{display: "flex", gap: "2.5rem", flexWrap: "wrap", marginTop: "2rem"}}>
-          <Video />
-
+          {videos}
         </div>
       </div>
     </section>
