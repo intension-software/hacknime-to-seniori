@@ -6,9 +6,9 @@ body {
   margin-inline: 2rem;
 }
 
-video::-webkit-media-controls-fullscreen-button
+/* video::-webkit-media-controls-fullscreen-button
 {
         display: none !important;
-}
+} */
 
 
